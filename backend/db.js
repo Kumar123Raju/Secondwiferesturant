@@ -23,11 +23,6 @@ const foodCategory=await mongoose.connection.db.collection("foodCategory");
 const catData=await foodCategory.find({}).toArray();
 global.foodData2=data;
 global.foodCategory=catData;
-// console.log(global.foodCategory);
-
-// console.log(global.foodData2);
-
-
 
 
   }catch(err){
